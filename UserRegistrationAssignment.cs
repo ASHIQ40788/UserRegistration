@@ -14,9 +14,10 @@ namespace UserRegistration
         //string pattern = "^[a-zA-Z0-9]+[._+]{0,1}[a-zA-Z0-9]*@[a-zA-Z0-9]{1,15}.[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";//UC3-E-mail.
         //string pattern = "^[0-9]{2}[  ]*[0-9]{10}$";//UC4-MobileNumber
         //string pattern = "^[a-zA-z]{8,}$"; //UC5-Password rules(minimum 8 Characters)
-         string pattern = "^[a-zA-Z]{1,}[A-Z]{1,}[a-zA-Z]*";//UC6-at least 1 Upper Case
-                  //writing the valid pattern
-        string[] inputs = { "Ashiqshaik","aAaAShiq", "AsHiQSHAIKAshiq"};//Validating some Example
+         //string pattern = "^[a-zA-Z]{1,}[A-Z]{1,}[a-zA-Z]*";//UC6-at least 1 Upper Case
+         string pattern = "^[a-zA-Z0-9]{1,}[A-Z]*[0-9]*[a-zA-Z0-9]*$";//UC7-at least 1 numeric number in the password.
+               //writing the valid pattern
+        string[] inputs = { "Ashiq40788","ASHIQ8","8ASHIQshaiks","1ASHII40788aAsShHiI","ASHIQSHAIKSVALIashiq","#)ashiq1213","8A788aShiq40788"};//Validating some Example
 
 
         /// <summary>
