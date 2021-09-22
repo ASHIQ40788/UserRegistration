@@ -9,9 +9,10 @@ namespace UserRegistration
 {
     class UserRegistrationAssignment
     {
-        string pattern = "^[A-Z]{1}[a-z]{2,25}$"; //UC1-FirstName
-         //writing the valid pattern
-        string[] inputs = { "Ashiq", "Ameer", "ashiq", "ameer", "Revanth", "Susank", "susank" };//Validating some Example
+        //string pattern = "^[A-Z]{1}[a-z]{2,25}$"; //UC1-FirstName
+        string pattern = "^[A-Z]{1}[a-z]{2,30}[  ]*[A-Z]{1}[a-z]{2,20}$"; //UC2-FirstAndLastName
+                                   //writing the valid pattern
+        string[] inputs = { "Ashiq Shaik", "Ameer Shaik", "ashiq shaik", "ameer shaik", "Revanth Peddasingu", "Susank Behar", "susank behar" };//Validating some Example
 
 
         /// <summary>
