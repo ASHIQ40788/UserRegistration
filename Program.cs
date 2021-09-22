@@ -11,8 +11,11 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            
-            //Welcome to User Registration Assignment
+
+            //Creating a object.
+            UserRegistrationAssignment sample = new UserRegistrationAssignment();
+            sample.Validating();
+            Console.ReadLine();
 
 
         }
