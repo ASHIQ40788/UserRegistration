@@ -16,10 +16,14 @@ namespace UserRegistration
         //string pattern = "^[a-zA-z]{8,}$"; //UC5-Password rules(minimum 8 Characters)
         //string pattern = "^[a-zA-Z]{1,}[A-Z]{1,}[a-zA-Z]*";//UC6-at least 1 Upper Case
         // string pattern = "^[a-zA-Z0-9]{1,}[A-Z]*[0-9]*[a-zA-Z0-9]*$";//UC7-at least 1 numeric number in the password.
-        string pattern = "^[a-zA-Z0-9]{1,}[A-Z]*[0-9]*[@&*?_-]{1}[a-zA-Z0-9]*$"; //UC8-Has exactly 1 Special Character   
-        //writing the valid pattern
-        string[] inputs = { "Ashiq40788","ASHIQ8@123","8ASHIQshaiks","1ASHII40788ashi","A1S&Ashiq788","#)ashiq1213","8A788aShiq40788"};//Validating some Example
+        //string pattern = "^[a-zA-Z0-9]{1,}[A-Z]*[0-9]*[@&*?_-]{1}[a-zA-Z0-9]*$"; //UC8-Has exactly 1 Special Character.
+        //UC8
+        //string[] inputs = { "A1S&Ashiq788","ASHIQ8@123","8ASHIQshaiks","1ASHII40788ashi","A1S&Ameer788","#)ashiq1213","8A788aShiq40788", "Ashiq40788" };//Validating some Example
 
+        string pattern = "^[a-zA-Z0-9]+[._+]{0,1}[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}.[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";//UC9-clear all email samples.
+        //writing the valid pattern
+        string[] inputs = { "ashiq.8shaik@gmail.com.au", "ashIqS?haik", "Ashiq788", "ashiqshaiksvali8@gmail.com", "SADNIJOQWN788BD", "ashiq.100@yahoo.com", "ashiq@1.com", "bridgelabz100+@gmail.com" };//Validating some Example
+        //string[] inputs = { "abc@yahoo.com", "abc100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com", "abc+100@gmail.com" };
 
         /// <summary>
         /// Verifying the process

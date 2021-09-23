@@ -12,7 +12,7 @@ namespace UserRegistration
         static void Main(string[] args)
         {
 
-            //Creating a object.
+            //Creating an object.
             UserRegistrationAssignment sample = new UserRegistrationAssignment();
             sample.Validating();
             Console.ReadLine();
