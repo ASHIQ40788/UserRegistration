@@ -31,7 +31,7 @@ namespace UserRegistration
         public void Validating()
         {
             Regex regex = new Regex(pattern);
-            Console.WriteLine("Verifying Email address: ");
+            Console.WriteLine("Verifying inputs: ");
             IterationLoop(inputs, regex);
         }
         public static void IterationLoop(string[] arr, Regex regex)
